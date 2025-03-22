@@ -3,8 +3,11 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
+import { useCountdown } from '../../hooks/useCountdown';
+
 const HeroSection = () => {
   const [, setLocation] = useLocation();
+  const countdown = useCountdown(10800); // 3 hours in seconds
 
   return (
     <section className="relative pt-20 pb-32 z-10 overflow-hidden">
@@ -55,7 +58,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <h4 className="font-orbitron text-sm text-aurora-teal">NEXT LAUNCH</h4>
-                  <p className="font-space-mono text-xl">{useCountdown(10800)}</p>
+                  <p className="font-space-mono text-xl">{countdown}</p>
                   <p className="text-xs text-lunar-white/70">Reserve your spot now</p>
                 </div>
               </div>

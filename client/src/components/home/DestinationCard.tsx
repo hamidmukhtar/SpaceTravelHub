@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useCountdown } from '../../hooks/useCountdown'; // Import useCountdown hook
 
 function useCountdown(seconds) {
   const [timeLeft, setTimeLeft] = useState(seconds);
@@ -27,6 +28,7 @@ function formatTime(seconds) {
 
 
 function HeroSection() {
+  const countdown = useCountdown(Math.floor(Math.random() * 86400) + 86400); // Use useCountdown hook
   return (
     <section className="bg-space-blue-dark py-16">
       <div className="container mx-auto text-center">
@@ -34,7 +36,7 @@ function HeroSection() {
         <p className="text-2xl text-lunar-white/70 mb-8">Your journey to the stars starts here.</p>
         <div className="bg-space-blue-light/30 p-4 rounded-lg">
           <p className="text-xl text-aurora-teal">Next Launch in:</p>
-          <p className="text-4xl font-bold text-lunar-white">{useCountdown(Math.floor(Math.random() * 86400) + 86400)}</p>
+          <p className="text-4xl font-bold text-lunar-white">{countdown}</p> {/* Display countdown */}
         </div>
       </div>
     </section>
@@ -43,6 +45,7 @@ function HeroSection() {
 
 
 function DestinationCard({ destination }) {
+  const countdown = useCountdown(Math.floor(Math.random() * 20000) + 3600); // Use useCountdown hook
   return (
     <div className="bg-space-blue-dark rounded-lg shadow-lg overflow-hidden">
       <img
@@ -58,7 +61,7 @@ function DestinationCard({ destination }) {
             <span className="material-icons text-cosmic-purple mr-2">timer</span>
             <div>
               <p className="text-xs text-aurora-teal">NEXT LAUNCH IN</p>
-              <p className="font-space-mono">{useCountdown(Math.floor(Math.random() * 20000) + 3600)}</p>
+              <p className="font-space-mono">{countdown}</p> {/* Display countdown */}
             </div>
           </div>
         </div>
