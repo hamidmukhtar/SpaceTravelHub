@@ -18,7 +18,7 @@ const DestinationCard = ({ destination }: { destination: Destination }) => {
           className="destination-image w-full h-full object-cover"
         />
         <div className="absolute top-4 right-4 bg-space-blue/90 backdrop-blur-md rounded-full px-3 py-1 text-xs shadow-sm">
-          <span className="flex items-center text-stellar-orange">
+          <span className="flex items-center text-cosmic-purple">
             <Star className="h-3 w-3 mr-1" />
             {destination.rating.toFixed(1)} ({destination.reviewCount})
           </span>
