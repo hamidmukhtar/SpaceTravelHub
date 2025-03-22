@@ -217,6 +217,30 @@ export class MemStorage implements IStorage {
       isNew: false
     });
 
+    // Sample Bookings
+    this.createBooking({
+        id: 1,
+        userId: 1, // User ID for Alex Spacebound
+        departureDate: new Date('2023-11-01T09:00:00Z').toISOString(),
+        status: 'confirmed',
+        destinationId: 1, // Assuming the destination ID exists
+    });
+    this.createBooking({
+        id: 2,
+        userId: 1,
+        departureDate: new Date('2023-12-15T14:00:00Z').toISOString(),
+        status: 'confirmed',
+        destinationId: 1,
+    });
+    this.createBooking({
+        id: 3,
+        userId: 1,
+        departureDate: new Date('2024-01-20T11:00:00Z').toISOString(),
+        status: 'cancelled',
+        destinationId: 1,
+    });
+    
+
     this.createDestination({
       name: "Lunar Colony Alpha",
       description: "Visit humanity's first permanent lunar settlement with luxury accommodations and moonwalks.",
