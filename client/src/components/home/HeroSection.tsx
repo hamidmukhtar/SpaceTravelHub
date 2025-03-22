@@ -55,7 +55,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <h4 className="font-orbitron text-sm text-aurora-teal">NEXT LAUNCH</h4>
-                  <p className="font-space-mono text-xl">23:14:08</p>
+                  <p className="font-space-mono text-xl">{useCountdown(10800)}</p>
                   <p className="text-xs text-lunar-white/70">Reserve your spot now</p>
                 </div>
               </div>
