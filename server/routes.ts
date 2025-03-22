@@ -2,6 +2,8 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { z } from "zod";
+import express from "express";
+import path from "path";
 import { 
   insertUserSchema, 
   insertBookingSchema,
@@ -12,6 +14,9 @@ import {
 } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve static files from public directory
+  app.use('/images', express.static(path.join(__dirname, '../public/images')));
+
   // API Routes - all prefixed with /api
   
   // Destinations routes
