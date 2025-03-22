@@ -11,6 +11,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { StarsBackground } from "@/components/ui/stars-background";
 
+// Added Signup component
+const Signup = () => <div>Signup Page</div>;
+
+
 function Router() {
   return (
     <Switch>
@@ -18,6 +22,7 @@ function Router() {
       <Route path="/dashboard" component={Dashboard}/>
       <Route path="/destinations/:id" component={DestinationDetails}/>
       <Route path="/booking" component={BookingProcess}/>
+      <Route path="/signup" component={Signup} />
       <Route component={NotFound} />
     </Switch>
   );

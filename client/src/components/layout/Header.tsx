@@ -45,13 +45,22 @@ const Header = () => {
           </nav>
           
           <div className="flex items-center space-x-4">
-            <Button 
-              variant="default" 
-              className="hidden md:block bg-cosmic-purple hover:bg-cosmic-purple/80 px-5 py-2 rounded-full font-medium transition duration-300"
-              onClick={() => setLocation('/dashboard')}
-            >
-              Sign In
-            </Button>
+            <div className="hidden md:flex space-x-3">
+              <Button 
+                variant="outline"
+                className="border border-cosmic-purple text-cosmic-purple hover:bg-cosmic-purple/10 px-5 py-2 rounded-full font-medium transition duration-300"
+                onClick={() => setLocation('/signup')}
+              >
+                Sign Up
+              </Button>
+              <Button 
+                variant="default" 
+                className="bg-cosmic-purple hover:bg-cosmic-purple/80 px-5 py-2 rounded-full font-medium transition duration-300"
+                onClick={() => setLocation('/dashboard')}
+              >
+                Sign In
+              </Button>
+            </div>
             
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild className="md:hidden">
