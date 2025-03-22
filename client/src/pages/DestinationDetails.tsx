@@ -127,7 +127,7 @@ const DestinationDetails = () => {
                   <div>
                     <div className="flex justify-between mb-2">
                       <span className="text-lunar-white/70">Base price from:</span>
-                      <span className="font-space-mono text-2xl font-bold text-aurora-teal">${destination.price.toLocaleString()}</span>
+                      <span className="font-space-mono text-2xl font-bold text-aurora-teal">AED {destination.price.toLocaleString()}</span>
                     </div>
                     <div className="text-xs text-lunar-white/50 text-right">Per person, economy package</div>
                   </div>
@@ -409,7 +409,7 @@ const AccommodationCard = ({ accommodation }: { accommodation: Accommodation }) 
           <div>
             <span className="text-xs text-lunar-white/50">Per night</span>
             <div className="font-space-mono text-lg font-bold text-aurora-teal">
-              ${accommodation.pricePerNight.toLocaleString()}
+              AED {accommodation.pricePerNight.toLocaleString()}
             </div>
           </div>
           <Button 
