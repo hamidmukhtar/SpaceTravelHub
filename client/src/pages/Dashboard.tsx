@@ -133,7 +133,7 @@ const BookingCard = ({ booking }: { booking: Booking }) => {
           <div className="flex justify-between items-center">
             <div>
               <span className="text-xs text-lunar-white/50">Total Price</span>
-              <div className="font-space-mono text-lg font-bold text-aurora-teal">${booking.totalPrice.toLocaleString()}</div>
+              <div className="font-space-mono text-lg font-bold text-aurora-teal">AED {booking.totalPrice.toLocaleString()}</div>
             </div>
             <div className="space-x-2">
               <Button variant="outline" className="border-cosmic-purple text-cosmic-purple hover:bg-cosmic-purple/10">
