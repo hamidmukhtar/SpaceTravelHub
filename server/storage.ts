@@ -198,7 +198,7 @@ export class MemStorage implements IStorage {
     this.createDestination({
       name: "Orbital Space Station",
       description: "Experience zero gravity in our state-of-the-art space station with Earth views from every suite.",
-      imageUrl: "/images/future_station.jpeg",
+      imageUrl: "http://localhost:5000/images/future_station.jpeg",
       location: "LEO",
       distance: "350 km altitude",
       travelTime: "2-day journey",
@@ -212,7 +212,7 @@ export class MemStorage implements IStorage {
     this.createDestination({
       name: "Lunar Colony Alpha",
       description: "Visit humanity's first permanent lunar settlement with luxury accommodations and moonwalks.",
-      imageUrl: "/images/future_colony.jpeg",
+      imageUrl: "http://localhost:5000/images/future_colony.jpeg",
       location: "MOON",
       distance: "384,400 km",
       travelTime: "3-day journey",
@@ -226,7 +226,7 @@ export class MemStorage implements IStorage {
     this.createDestination({
       name: "Mars Transit Hotel",
       description: "Experience the revolutionary transit hotel on the Mars-Earth route with cosmic observation decks.",
-      imageUrl: "/images/future_hotel.jpeg",
+      imageUrl: "http://localhost:5000/images/future_hotel.jpeg",
       location: "ORBIT",
       distance: "Mars-Earth route",
       travelTime: "7-day stay",
