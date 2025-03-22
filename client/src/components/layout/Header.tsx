@@ -25,7 +25,7 @@ const Header = () => {
               <Rocket className="h-6 w-6" />
             </div>
             <h1 className="font-orbitron text-2xl font-bold tracking-wider">
-              COSMOS<span className="text-aurora-teal">TRAVEL</span>
+              Dubai<span className="text-aurora-teal">2Stars</span>
             </h1>
           </Link>
           

@@ -46,7 +46,7 @@ const DestinationCard = ({ destination }: { destination: Destination }) => {
           <div>
             <span className="text-xs text-lunar-white/50">Starting from</span>
             <div className="font-space-mono text-lg font-bold text-aurora-teal">
-              ${destination.price.toLocaleString()}
+              AED {destination.price.toLocaleString()}
             </div>
           </div>
           <Button 

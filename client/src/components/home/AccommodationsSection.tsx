@@ -44,7 +44,7 @@ const AccommodationCard = ({ accommodation }: { accommodation: Accommodation }) 
           <div>
             <span className="text-xs text-lunar-white/50">Per night</span>
             <div className="font-space-mono text-lg font-bold text-aurora-teal">
-              ${accommodation.pricePerNight.toLocaleString()}
+              AED {accommodation.pricePerNight.toLocaleString()}
             </div>
           </div>
           <Button 

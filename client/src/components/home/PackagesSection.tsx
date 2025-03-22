@@ -23,7 +23,7 @@ const PackageCard = ({ pkg, onSelect }: { pkg: Package; onSelect: (id: number) =
         <h3 className="font-orbitron font-bold text-xl mb-1">{pkg.name}</h3>
         <p className="text-lunar-white/70 text-sm mb-4">{pkg.description}</p>
         <div className="flex items-baseline">
-          <span className="font-space-mono text-3xl font-bold text-lunar-white">${pkg.price.toLocaleString()}</span>
+          <span className="font-space-mono text-3xl font-bold text-lunar-white">AED {pkg.price.toLocaleString()}</span>
           <span className="text-lunar-white/70 text-sm ml-2">/ person</span>
         </div>
       </div>

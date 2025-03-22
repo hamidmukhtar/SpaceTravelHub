@@ -12,7 +12,7 @@ const Footer = () => {
                 <Rocket className="h-5 w-5" />
               </div>
               <h3 className="font-orbitron text-xl font-bold tracking-wider">
-                COSMOS<span className="text-aurora-teal">TRAVEL</span>
+                Dubai<span className="text-aurora-teal">2Stars</span>
               </h3>
             </div>
             <p className="text-lunar-white/70 text-sm mb-6">
@@ -73,7 +73,7 @@ const Footer = () => {
         
         <div className="border-t border-cosmic-purple/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-lunar-white/50 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} COSMOSTRAVEL. All rights reserved. Earth and Beyond.
+            &copy; {new Date().getFullYear()} Dubai2Stars. All rights reserved. Earth and Beyond.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-lunar-white/50 hover:text-aurora-teal transition duration-300">Privacy Policy</a>
