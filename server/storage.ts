@@ -33,7 +33,7 @@ export interface IStorage {
   // Testimonial operations
   getAllTestimonials(): Promise<Testimonial[]>;
   createTestimonial(testimonial: InsertTestimonial): Promise<Testimonial>;
-  
+
   // Booking operations
   createBooking(booking: InsertBooking): Promise<Booking>;
   getBookingsByUserId(userId: number): Promise<Booking[]>;
@@ -48,7 +48,7 @@ export class MemStorage implements IStorage {
   private accommodations: Map<number, Accommodation>;
   private testimonials: Map<number, Testimonial>;
   private bookings: Map<number, Booking>;
-  
+
   private userIdCounter: number;
   private destinationIdCounter: number;
   private packageIdCounter: number;
@@ -63,14 +63,14 @@ export class MemStorage implements IStorage {
     this.accommodations = new Map();
     this.testimonials = new Map();
     this.bookings = new Map();
-    
+
     this.userIdCounter = 1;
     this.destinationIdCounter = 1;
     this.packageIdCounter = 1;
     this.accommodationIdCounter = 1;
     this.testimonialIdCounter = 1;
     this.bookingIdCounter = 1;
-    
+
     // Initialize with sample data
     this.initializeData();
   }
@@ -194,6 +194,14 @@ export class MemStorage implements IStorage {
 
   // Initialize with sample data
   private initializeData() {
+    // Added demo user
+    this.createUser({
+      username: "alex.spacebound",
+      password: "demo123",
+      email: "alex@example.com",
+      fullName: "Alex Spacebound"
+    });
+
     // Destinations
     this.createDestination({
       name: "Orbital Space Station",
