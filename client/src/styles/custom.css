@@ -1,0 +1,160 @@
+/* Custom Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Custom Colors */
+:root {
+  --space-blue: #0A1128;
+  --space-blue-light: #1E293B;
+  --cosmic-purple: #6236FF;
+  --aurora-teal: #05D9E8;
+  --stellar-orange: #FF7B54;
+  --lunar-white: #F8FAFC;
+  --success: #10B981;
+  --alert: #EF4444;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--space-blue);
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(5, 217, 232, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(98, 54, 255, 0.05) 0%, transparent 50%);
+  overflow-x: hidden;
+}
+
+/* Custom Font Classes */
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-space-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Star Background Animation */
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle 4s infinite;
+  opacity: 0.7;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 0.3; }
+}
+
+/* Destination Card Hover Effects */
+.destination-card:hover .destination-image {
+  transform: scale(1.05);
+}
+
+.destination-image {
+  transition: transform 0.5s ease;
+}
+
+/* Booking Progress Bar */
+.booking-progress-bar .step.active::after {
+  width: 100%;
+}
+
+.booking-progress-bar .step::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: var(--aurora-teal);
+  width: 0;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--space-blue-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cosmic-purple);
+  border-radius: 3px;
+}
+
+/* Glass Effect */
+.glass-effect {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animation Utilities */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Tailwind Classes */
+.text-cosmic-purple {
+  color: var(--cosmic-purple);
+}
+
+.text-aurora-teal {
+  color: var(--aurora-teal);
+}
+
+.text-stellar-orange {
+  color: var(--stellar-orange);
+}
+
+.text-lunar-white {
+  color: var(--lunar-white);
+}
+
+.bg-space-blue {
+  background-color: var(--space-blue);
+}
+
+.bg-space-blue-light {
+  background-color: var(--space-blue-light);
+}
+
+.bg-cosmic-purple {
+  background-color: var(--cosmic-purple);
+}
+
+.bg-aurora-teal {
+  background-color: var(--aurora-teal);
+}
+
+.bg-stellar-orange {
+  background-color: var(--stellar-orange);
+}
+
+.border-cosmic-purple {
+  border-color: var(--cosmic-purple);
+}
+
+.border-aurora-teal {
+  border-color: var(--aurora-teal);
+}
+
+.border-stellar-orange {
+  border-color: var(--stellar-orange);
+}
