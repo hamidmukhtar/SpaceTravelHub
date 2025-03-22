@@ -198,7 +198,7 @@ export class MemStorage implements IStorage {
     this.createDestination({
       name: "Orbital Space Station",
       description: "Experience zero gravity in our state-of-the-art space station with Earth views from every suite.",
-      imageUrl: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      imageUrl: "https://images.pexels.com/photos/8474484/pexels-photo-8474484.jpeg?auto=compress&cs=tinysrgb&w=800",
       location: "LEO",
       distance: "350 km altitude",
       travelTime: "2-day journey",
@@ -212,7 +212,7 @@ export class MemStorage implements IStorage {
     this.createDestination({
       name: "Lunar Colony Alpha",
       description: "Visit humanity's first permanent lunar settlement with luxury accommodations and moonwalks.",
-      imageUrl: "https://images.unsplash.com/photo-1581822261290-991b38693d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      imageUrl: "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=800",
       location: "MOON",
       distance: "384,400 km",
       travelTime: "3-day journey",
@@ -226,7 +226,7 @@ export class MemStorage implements IStorage {
     this.createDestination({
       name: "Mars Transit Hotel",
       description: "Experience the revolutionary transit hotel on the Mars-Earth route with cosmic observation decks.",
-      imageUrl: "https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      imageUrl: "https://images.pexels.com/photos/4321803/pexels-photo-4321803.jpeg?auto=compress&cs=tinysrgb&w=800",
       location: "ORBIT",
       distance: "Mars-Earth route",
       travelTime: "7-day stay",
@@ -287,7 +287,7 @@ export class MemStorage implements IStorage {
     this.createAccommodation({
       name: "Lunar Habitat Suite",
       description: "Luxury lunar accommodations with Earth views and private lunar terrain access.",
-      imageUrl: "https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      imageUrl: "https://images.pexels.com/photos/5717416/pexels-photo-5717416.jpeg?auto=compress&cs=tinysrgb&w=800",
       location: "Lunar Colony Alpha",
       capacity: "2-4 guests",
       pricePerNight: 12500,
@@ -298,7 +298,7 @@ export class MemStorage implements IStorage {
     this.createAccommodation({
       name: "Orbital Luxury Pod",
       description: "Premium orbital accommodations with 360° Earth views and zero-gravity sleeping chambers.",
-      imageUrl: "https://images.unsplash.com/photo-1518365050014-70fe7232897f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      imageUrl: "https://images.pexels.com/photos/5282269/pexels-photo-5282269.jpeg?auto=compress&cs=tinysrgb&w=800",
       location: "Orbital Space Station",
       capacity: "1-2 guests",
       pricePerNight: 8900,
